@@ -34,12 +34,9 @@ Same Result For Turkey
 
 SELECT 
     name AS company_name,
-    job_id,
     job_title,
     job_location,
-    job_schedule_type,
-    salary_year_avg,
-    job_posted_date
+    salary_year_avg
 
 FROM
     job_postings_fact
@@ -54,4 +51,4 @@ WHERE
 
 ORDER BY
     salary_year_avg DESC
-LIMIT 100
+LIMIT 10
